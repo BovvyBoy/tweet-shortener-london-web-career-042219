@@ -1,5 +1,5 @@
 # Write your code here.
-
+# str.gsub /\d/, dictionary
 dictionary {
   "hello" => "hi",
   "to" => "2",
@@ -15,8 +15,10 @@ dictionary {
 
 word_substituter(dictionary)
 dictionary.each do |word, substitute|
-  word.gsub(substitute)
+  word.gsub(substitute, dictionary) += new_str
 end
+end
+
 
   
 
